@@ -1,61 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./bai2-1.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
+      }
+    }
+  </script>
 
 </head>
-<body class="bg-slate-400">
-    <!-- https://preview.colorlib.com/#startup2 -->
-    <header>
-      <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <img src="   https://preview.colorlib.com/theme/startup2/img/logo.png.webp" alt="">
+
+<body class="final">
+  <!-- https://preview.colorlib.com/#startup2 -->
+  <header class="header">
+    <nav class="flex items-center justify-between bg-[#1F1F1F] bg- p-6 max-h-max ">
+
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <img src="https://preview.colorlib.com/theme/startup2/img/logo.png.webp" alt="">
+      </div>
+
+      <div class="w-full flex items-center justify-center">
+        <div class="w-1/3 text-sm flex justify-around  ">
+          <a href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 font-bold text-base">
+            Home
+          </a>
+          <a href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4  font-bold text-base">
+            Service
+          </a>
+          <a href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white  font-bold text-base">
+            Pofolio
+          </a>
+          <a href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white  font-bold text-base">
+            Page
+          </a>
+          <a href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white  font-bold text-base">
+            Blog
+          </a>
+          <a href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white  font-bold text-base">
+            Contact
+          </a>
         </div>
 
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:justify-center lg:w-auto">
-          <div class="text-sm lg:flex-grow">
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-              Home
-            </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-              Service
-            </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-              Pofolio
-            </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-              Page
-            </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-              Blog
-            </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-              Contact
-            </a>
+      </div>
+      <div>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+          Contact
+        </a>
+      </div>
+    </nav>
+  </header>
+  <section class="section-1 bg-slate-400 w-[100%] h-auto">
+    <div class="slider">
+      <img src="https://preview.colorlib.com/theme/startup2/img/banner/banner.png" alt="">
+      <div class="overlay flex justify-center items-center">
+        <div class="text-slider grid-cols-1 w-2/4 h-auto flex-col ">
+          <h1 class="text-white text-7xl mb-10 font-semibold">Startup you can build a website online using the Bootstrap
+            builder</h1>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            Visit our work
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-center">
+    <div class="text-content mt-40">
+      <p>Services</p>
+      <h3 class="font-normal text-4xl mt-8">
+        With more than 20 years of experience we can deliver the best product design
+      </h3>
+      <div class="grid grid-cols-3 px-60 mt-20 gap-0 text-center  justify-center">
+        <div class="card border gap-7 w-80 h-80 rounded-md">
+          <div class="icon-card  flex justify-center mt-10">
+            <img src="https://preview.colorlib.com/theme/startup2/img/svg_icon/1.svg" alt="">
           </div>
-          <div>
-            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+          <h5 class="mt-10">Graphic design</h5>
+          <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis eveniet mollitia cumque
+            distinctio?
+            Maiores iste earum consequuntur soluta, id dolorum ?</p>
+        </div>
+        <div class="card border gap-7 w-80 h-80 rounded-md">
+          <div class="icon-card  flex justify-center mt-10">
+            <img src="https://preview.colorlib.com/theme/startup2/img/svg_icon/1.svg" alt="">
+          </div>
+          <h5 class="mt-10">Graphic design</h5>
+          <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis eveniet mollitia cumque
+            distinctio?
+            Maiores iste earum consequuntur soluta, id dolorum ?</p>
+        </div>
+        <div class="card border gap-7 w-80 h-80 rounded-md">
+          <div class="icon-card  flex justify-center mt-10">
+            <img src="https://preview.colorlib.com/theme/startup2/img/svg_icon/1.svg" alt="">
+          </div>
+          <h5 class="mt-10">Graphic design</h5>
+          <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis eveniet mollitia cumque
+            distinctio?
+            Maiores iste earum consequuntur soluta, id dolorum ?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-center-2 w-[100%] h-auto mt-20">
+    <div class="grid  gap-0 grid-cols-2  w-[100%]">
+      <div class="item-left">
+        <img src="https://preview.colorlib.com/theme/startup2/img/about/about.png" alt="">
+      </div>
+      <div class="item-right bg-[#193445]">
+        <div class="content-about text-white ml-[130px] mt-[162px] ">
+          <h5 class="text-2xl">About Us</h5>
+          <h3 class="text-5xl">Empowering individuals</h3>
+          <p class="w-2/4 mt-16">Efficiently unleash cross-media tour function information without cross action media
+            value. Quickly maximize timely deliverables for real-time schemas.
+
+            “Function information without cross action media value.
+
+          </p>
+
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-16">
+            About us
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-center-2 w-[100%] h-auto mt-20">
+    <div class="featured text-center">
+      <h1>Featured Works</h1>
+      <p>Tour function information without cross action media value quickly<br>
+        maximize timely deliverables.</p>
+
+    </div>
+    <div class="feature-grid mt-20">
+      <div class="grid grid-cols-3 mx-96 grid-flow-row gap-4">
+        <div class=" col-span-2">
+          <img src="https://preview.colorlib.com/theme/startup2/img/portfolio/1.png" alt="">
+        </div>
+        <div class="bg-slate-400 ">
+          <img src="	https://preview.colorlib.com/theme/startup2/img/portfolio/2.png" alt="">
+        </div>
+        <div class="bg-slate-600">
+          <img src="	https://preview.colorlib.com/theme/startup2/img/portfolio/3.png" alt="">
+        </div>
+        <div class="bg-slate-400">
+          <img src="https://preview.colorlib.com/theme/startup2/img/portfolio/4.png" alt="">
+        </div>
+        <div class="bg-slate-600">
+          <img src="https://preview.colorlib.com/theme/startup2/img/portfolio/5.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-center-2 w-[100%] h-auto mt-20">
+    <div class="grid  gap-0 grid-cols-2  w-[100%]">
+      <div class="item-left ">
+        <div class="content-work pl-96">
+          <h1 class="text-4xl">How we work</h1>
+          <h1 class="text-xl">“Function information without cross action media value.</h1>
+          <p class="text-gray-600 mt-14">Efficiently unleash cross-media tour function information<br> without cross
+            action media value. Quickly maximize timely <br> deliverables for real-time schemas.</p>
+          <div class="btn flex justify-start items-center mt-14">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold mr-4 w-[50px] h-[50px] rounded-[50%]">
+              t
+            </button>
+            <h1 class="text-lg">Watch video</h1>
           </div>
         </div>
-      </nav>
-
-    </header>
-
+      </div>
+      <div class="item-right ">
+        <img src="	https://preview.colorlib.com/theme/startup2/img/work/work.png" alt="" class="rounded-l-3xl">
+      </div>
+    </div>
+    </div>
+  </section>
 
 </body>
+
 </html>

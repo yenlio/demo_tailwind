@@ -1,0 +1,23 @@
+.section-1{
+ position: relative;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(57, 57, 57, 0.5);
+    width: 100%;
+    height: auto;
+}
+.header{
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
