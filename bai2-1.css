@@ -12,12 +12,50 @@ img{
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(57, 57, 57, 0.5);
+    opacity: inherit;
+    background: rgba(19, 19, 19, 0.5);
     width: 100%;
     height: auto;
 }
 .header{
+    z-index: 10;
     position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+    position: sticky;
+    top: 0;
+  
+}
+.image-1{
+    position: relative;
+}
+.overlay-1{
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+}
+.overlay-1:hover{
+z-index: 1;
+opacity: 0;
+transition: 2s;
+}
+
+.overlay-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: inherit;
+    background: rgba(19, 19, 19, 0.5);
+    width: 100%;
+    height: auto;
+}
+
+li{
+    display: inline-block;
+    margin-right:20px
 }
